@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --blue-color:#1992D3;
+    --projects-outline:#E5B35F;
+    --grey-back:#E1E7EF;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+.container {
+    height: 100vh;
+    background-color: var(--grey-back);
+
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 5fr;
+    grid-template-areas: "sidebar header"
+                         "sidebar main";
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: var(--blue-color);
+}
+
+.header {
+    grid-area: header;
+    background-color: white;
+}
+
+.main {
+    grid-area: main;
+}
